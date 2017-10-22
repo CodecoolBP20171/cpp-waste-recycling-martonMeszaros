@@ -3,5 +3,5 @@ project(cpp_waste_recycling_martonMeszaros)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.cpp)
+set(SOURCE_FILES main.cpp src/Garbage.hpp src/PaperGarbage.hpp src/PlasticGarbage.hpp)
 add_executable(cpp_waste_recycling_martonMeszaros ${SOURCE_FILES})
