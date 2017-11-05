@@ -1,6 +1,10 @@
 #include <iostream>
 
+#include "src/Dustbin.h"
+
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    Dustbin dustbin("yellow");
+    Garbage garbage;
+    dustbin.throwOutGarbage(garbage);
     return 0;
 }
