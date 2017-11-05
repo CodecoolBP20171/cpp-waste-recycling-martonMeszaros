@@ -9,11 +9,14 @@
 
 class PlasticGarbage : public Garbage {
 public:
+    PlasticGarbage() : Garbage(), isClean(false) {}
     PlasticGarbage(std::string& name, bool& isClean) :
             Garbage(name), isClean(isClean) {}
     ~PlasticGarbage() {}
 
     void clean() { isClean = true; }
+    bool getClean() const { return isClean; }
+
 private:
     bool isClean;
 };

@@ -9,11 +9,13 @@
 
 class PaperGarbage : public Garbage {
 public:
+    PaperGarbage() : Garbage(), isSqueezed(false) {}
     PaperGarbage(std::string& name, bool& isSqueezed) :
             Garbage(name), isSqueezed(isSqueezed) {}
     ~PaperGarbage() {}
 
     void squeeze() { isSqueezed = true; }
+    bool getSqueezed() const { return isSqueezed; };
 
 private:
     bool isSqueezed;
